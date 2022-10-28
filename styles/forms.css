@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #555555;
+  --indent__base: 16px;
+  accent-color: var(--secondary-color);
+}
+
+html {
+  font-size: 10px;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  --primary-color: #ff55aa;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: var(--indent__base);
+  margin: 8px;
+  border: 1px solid var(--primary-color)
+}
+
+h1 {
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+section {
+  background-color: #dddddd;
+  flex-grow: 1;
+  padding: var(--indent__base);
+}
+
+form {
+  padding: var(--indent__base);
+}
+
+fieldset {
+  border-radius: 5px;
+  margin-bottom: var(--indent__base);
+  padding: var(--indent__base);
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: calc(var(--indent__base) / 4);
+}
+
+input,
+textarea {
+  margin-bottom: var(--indent__base);
+}
+
+.checkboxes-and-radios label {
+  display: flex;
+  align-items: flex-end;
+}
+
+input[type="text"] {
+  border: none;
+  box-shadow: 5px 5px 3px 0px var(--secondary-color);
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--primary-color);
+  border: 1px solid #333333;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 2rem;
+  justify-content: center;
+  margin: 0 4px 0 0;
+  width: 2rem;
+}
+
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
+  content: "\2718";
+  font-size: 1.5rem;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+button {
+  appearance: none;
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-color);
+  padding: calc(var(--indent__base) / 2) var(--indent__base);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+footer {
+  background-color: #333333;
+  color: var(--primary-color);
+  padding: var(--indent__base);
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --indent__base: 32px;
+    --primary-color: lightblue;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  form {
+    margin: auto;
+    max-width: 990px;
+  }
+
+  label,
+  input {
+    display: inline;
+  }
+
+  input[type="text"] {
+  width: 80%;
+  }
+}

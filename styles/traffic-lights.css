@@ -1,0 +1,42 @@
+body {
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.traffic-lights {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 24px;
+  height: calc(3 * 25vh + 96px);
+}
+
+.traffic-light {
+  border-radius: 50%;
+  height: 25vh;
+  aspect-ratio: 1 / 1;
+  opacity: .5;
+}
+
+.traffic-light:hover {
+  opacity: 1;
+}
+
+.traffic-light.red {
+  background-color: red;
+}
+
+.traffic-light.yellow {
+  background-color: yellow;
+}
+
+.traffic-light.green {
+  background-color: green;
+}

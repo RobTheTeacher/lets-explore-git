@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/forms.css">
+</head>
+
+<body>
+  <header>
+    <h1> How to create Forms in the modern world</h1>
+  </header>
+
+  <section>
+    <form action="mailto:robert.chamberlain@cmeducations.se" method="post">
+      <fieldset>
+        <legend>Form example</legend>
+        <div>
+          <label for="first-name">Enter your name:</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        <label for="message">Leave a message</label>
+        <textarea id="message" name="message" rows="5" cols="10" 
+          placeholder="Say nice things"></textarea>
+      </fieldset>
+
+      <fieldset class="checkboxes-and-radios">
+        <legend>Checkboxes and radios</legend>
+        <div>
+          <p>
+            Checkboxes
+          </p>
+        <label>
+          <input type="checkbox" name="nice-day-yes" value="yes" id="nice-day-yes" checked>
+          I had a nice day!
+        </label>
+        </div> 
+        <div>
+          <label>
+            <input type="checkbox" name="nice-day-no" value="no" id="nice-day-no">
+            I didn't have a nice day
+          </label>
+        </div>
+
+        <div>
+          <p>
+            Radio Buttons
+          </p>
+          <label for="sweden">
+            <input type="radio" name="best-country" id="sweden" value="sweden">
+            Sweden
+          </label>
+        </div>
+        <div>
+          <label for="denmark">
+            <input type="radio" name="best-country" id="denmark" value="denmark">
+            Denmark
+          </label>
+        </div>
+        <div>
+          <label for="australia">
+            <input type="radio" name="best-country" id="australia" value="australia">
+            Australia
+          </label>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend>Select</legend>
+          <select name="animals">
+            <option value="cats">Cats</option>
+            <option value="dogs">Dogs</option>
+            <option value="kangaroos">Kangaroos</option>
+            <option value="elk">Elk</option>
+          </select>
+        </fieldset>
+      <button>Send the form</button>
+    </form>
+  </section>
+
+  <footer>
+    <h3>Copyright 2022</h3>
+  </footer>
+</body>
